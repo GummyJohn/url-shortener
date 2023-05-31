@@ -1,0 +1,65 @@
+:root{
+  --Cyan : hsl(180, 66%, 49%);
+  --Dark-Violet: hsl(257, 27%, 26%);
+  --Dark-Gray: #5A5A5A;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  height: 100vh;
+}
+
+.logo{
+  background-image: url('./images/logo.svg');
+  height: 2rem;
+  width: 7.5rem;
+  margin-right: 1.5rem; 
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Dark-Gray);
+  width: 100%;
+  height: 10%;
+}
+
+.first-header-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.first-header-div .headerText{
+  margin: auto .7rem;
+}
+
+.second-header-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.second-header-div .headerText{
+  margin: auto .7rem;
+}
+
+.headerText:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.second-header-div p:last-of-type{
+  border: 1px solid var(--Cyan);
+  background-color: var(--Cyan);
+  padding: .5rem;
+  border-radius: 1rem;
+}
+.second-header-div p:last-of-type:hover{
+  color: white;
+}
