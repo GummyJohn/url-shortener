@@ -54,16 +54,16 @@ const showcase = divCreate('showcase');
 const showcaseContent = divCreate('showcase-content');
 const showcaseImg = divCreate('showcase-img');
 
-const inputContainer = divCreate('input-container')
-
-const inputText = document.createElement('input');
-inputText.className = 'text-input';
-inputText.placeholder = 'Shorten a link here...';
 
 showcaseContent.append(title(`More than just shorter links`, 'showcase-title'))
 showcaseContent.append(PCreate(
   "Build your brand's recognition and get detailed inslights on how your links are performing", 'showcase-p'));
 showcaseContent.append(button('Get Started', 'button'));
+
+const inputContainer = divCreate('input-container')
+const inputText = document.createElement('input');
+inputText.className = 'text-input';
+inputText.placeholder = 'Shorten a link here...';
   
 inputContainer.append(inputText);
 inputContainer.append(button('Shorten It!', 'shorten-btn'));
@@ -144,17 +144,59 @@ body.append(beforeFooter);
 //FOOTER
 const footer = divCreate('footer');
 const footerLogo = divCreate('footer-logo')
+footerLogo.innerHTML = `
+  <img src='./images/white-logo.svg'>
+`;
 
 const features = divCreate('features')
 const resources = divCreate('resources')
 const company = divCreate('company')
 const social = divCreate('socials')
 
+const facebookLogo = divCreate('facebook');
+facebookLogo.innerHTML= `
+  <i class="fa-brands fa-facebook"></i>
+`;
+const twitterLogo = divCreate('twitter');
+twitterLogo.innerHTML= `
+  <i class="fa-brands fa-twitter"></i>
+`;
+const pinterestLogo = divCreate('pinterest');
+pinterestLogo.innerHTML= `
+  <i class="fa-brands fa-pinterest"></i>
+`;
+const instagramLogo = divCreate('instagram');
+instagramLogo.innerHTML= `
+  <i class="fa-brands fa-instagram"></i>
+`;
+
 features.append(PCreate('Features', 'first'))
 features.append(PCreate('Link Shortening', 'list'))
 features.append(PCreate('Branded Links', 'list'))
 features.append(PCreate('Analytics', 'list'))
 
+resources.append(PCreate('Resources', 'first'))
+resources.append(PCreate('Blog', 'list'))
+resources.append(PCreate('Developers', 'list'))
+resources.append(PCreate('Support', 'list'))
 
+company.append(PCreate('Company', 'first'))
+company.append(PCreate('About', 'list'))
+company.append(PCreate('Our Team', 'list'))
+company.append(PCreate('Careers', 'list'))
+company.append(PCreate('Contact', 'list'))
+
+social.append(facebookLogo)
+social.append(twitterLogo)
+social.append(pinterestLogo)
+social.append(instagramLogo)
+
+footer.append(footerLogo)
+footer.append(features)
+footer.append(resources)
+footer.append(company)
+footer.append(social)
+
+body.append(footer);
 
 
