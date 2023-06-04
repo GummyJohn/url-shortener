@@ -166,6 +166,7 @@ body{
 .stats-title-container{
   text-align: center;
   width: 43%;
+  margin-top: 8rem;
 }
 
 .boxes-container{
@@ -310,4 +311,40 @@ body{
 
 .link-display{
   width: 100%;
+  margin-top: .5rem;
+}
+
+.shorten-div{
+  border: 1px solid white;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  margin-top: -.5rem;
+}
+
+.shorten-div span{
+  color: var(--Cyan);
+  margin-right: 1rem;
+}
+
+.copy-button{
+  padding: .6rem 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--Cyan);
+  color: white;
+  margin-left: 1rem;
+}
+
+.copy-button:hover{
+  cursor: pointer;
+  background-color: var(--Dark-Violet) 
+}
+
+.original-link{
+  width: 50%;
 }
