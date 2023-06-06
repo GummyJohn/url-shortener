@@ -22,7 +22,7 @@ function title(text,name){
   return h2;
 }
 
- export function divCreate(name){
+export function divCreate(name){
   const div = document.createElement('div');
   div.className = name;
 
@@ -64,8 +64,6 @@ const inputContainer = divCreate('input-container')
 const inputText = document.createElement('input');
 inputText.className = 'text-input';
 inputText.placeholder = 'Shorten a link here...';
-
-console.log(inputContainer)
   
 inputContainer.append(inputText);
 inputContainer.append(button('Shorten It!', 'shorten-btn'));
